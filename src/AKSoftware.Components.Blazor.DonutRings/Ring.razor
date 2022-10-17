@@ -5,7 +5,7 @@
 	<defs>
 		@if (RingGradient != null)
 		{
-			<linearGradient id="ring-gradient" x1="1" y1="0" x2="0" y2="1">
+			<linearGradient id="progress-ring-gradient" x1="1" y1="0" x2="0" y2="1">
 				<stop offset="0%" stop-color="@RingGradient.Value.FirstColor" />
 				<stop offset="100%" stop-color="@RingGradient.Value.SecondColor" />
 			</linearGradient>
@@ -13,16 +13,17 @@
 		
 		@if (TrackRingGradient != null)
 		{
-			<linearGradient id="ring-gradient" x1="1" y1="0" x2="0" y2="1">
+			<linearGradient id="track-ring-gradient" x1="1" y1="0" x2="0" y2="1">
 				<stop offset="0%" stop-color="@TrackRingGradient.Value.FirstColor" />
 				<stop offset="100%" stop-color="@TrackRingGradient.Value.SecondColor" />
 			</linearGradient>
 		}
 	</defs>
 
-	<circle class="track-ring" cx="25" cy="25" r="15.91549430918954"></circle>
+	<circle class="track-ring" cx="25" cy="25" r="15.91549430918954"
+			stroke="@_trackStroke"></circle>
 
 	<circle class="progress-ring" cx="25" cy="25" r="15.91549430918954"
-			stroke="url(#blueGradient)" stroke-dasharray="100 0"></circle>
+			stroke="@_ringStroke" stroke-dasharray="@_dashesValue @_dashesSpace"></circle>
 
 </svg>

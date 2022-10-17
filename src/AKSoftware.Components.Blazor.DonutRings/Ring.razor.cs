@@ -38,7 +38,7 @@ namespace AKSoftware.Components.Blazor
         /// Represents the solid color of the full track ring
         /// </summary>
         [Parameter]
-        public string TrackRingSolidColor { get; set; } = "#e5e5e5";
+        public string TrackRingSolidColor { get; set; } = "#e5e5e5aa";
 
         /// <summary>
         /// Represents the max value of the progress 
@@ -66,6 +66,12 @@ namespace AKSoftware.Components.Blazor
         [Parameter]
         public string Height { get; set; } = "100px";
         #endregion 
+
+        private string? _ringStroke => RingGradient == null ? RingSolidColor : "url(#progress-ring-gradient)";
+        private string? _trackStroke => TrackRingGradient == null ? TrackRingSolidColor : "url(#track-ring-gradient)";
+
+        private double _dashesValue => Value * 100 / MaxValue;
+        private double _dashesSpace => 100 - _dashesValue;
 
     }
 
