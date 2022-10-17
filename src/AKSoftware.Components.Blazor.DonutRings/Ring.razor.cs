@@ -10,6 +10,13 @@ namespace AKSoftware.Components.Blazor
     public partial class Ring
     {
         #region Parameters 
+
+        /// <summary>
+        /// Set of attributes that will be applied for the parent div of the SVG
+        /// </summary>
+        [Parameter(CaptureUnmatchedValues = true)]
+        public Dictionary<string, object>? UserAttributes { get; set; }
+        
         /// <summary>
         /// Set gradient color for the stroke of the ring, null for no gradient and will use SolidColor property 
         /// </summary>
@@ -67,9 +74,10 @@ namespace AKSoftware.Components.Blazor
         public string Height { get; set; } = "100px";
         #endregion 
 
-        private string? _ringStroke => RingGradient == null ? RingSolidColor : "url(#progress-ring-gradient)";
-        private string? _trackStroke => TrackRingGradient == null ? TrackRingSolidColor : "url(#track-ring-gradient)";
+        private string? _ringStroke => RingGradient == null ? RingSolidColor : $"url(#{_guid}-progress-ring-gradient)";
+        private string? _trackStroke => TrackRingGradient == null ? TrackRingSolidColor : $"url(#{_guid}-track-ring-gradient)";
 
+        private string _guid = Guid.NewGuid().ToString();
         private double _dashesValue => Value * 100 / MaxValue;
         private double _dashesSpace => 100 - _dashesValue;
 

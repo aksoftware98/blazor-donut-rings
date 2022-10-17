@@ -1,29 +1,31 @@
 ﻿@namespace AKSoftware.Components.Blazor
 
-<svg viewBox="0 0 50 50" width="500px" height="500px" style="background-color: transparent;">
+<div @attributes="UserAttributes">
+	<svg viewBox="0 0 40 40" width="@Width" height="@Height" style="background-color: transparent;">
 
-	<defs>
-		@if (RingGradient != null)
-		{
-			<linearGradient id="progress-ring-gradient" x1="1" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="@RingGradient.Value.FirstColor" />
-				<stop offset="100%" stop-color="@RingGradient.Value.SecondColor" />
-			</linearGradient>
-		}
-		
-		@if (TrackRingGradient != null)
-		{
-			<linearGradient id="track-ring-gradient" x1="1" y1="0" x2="0" y2="1">
-				<stop offset="0%" stop-color="@TrackRingGradient.Value.FirstColor" />
-				<stop offset="100%" stop-color="@TrackRingGradient.Value.SecondColor" />
-			</linearGradient>
-		}
-	</defs>
+		<defs>
+			@if (RingGradient != null)
+			{
+				<linearGradient id="@($"{_guid}-progress-ring-gradient")" x1="1" y1="0" x2="0" y2="1">
+					<stop offset="0%" stop-color="@RingGradient.Value.FirstColor" />
+					<stop offset="100%" stop-color="@RingGradient.Value.SecondColor" />
+				</linearGradient>
+			}
 
-	<circle class="track-ring" cx="25" cy="25" r="15.91549430918954"
-			stroke="@_trackStroke"></circle>
+			@if (TrackRingGradient != null)
+			{
+				<linearGradient id="@($"{_guid}-track-ring-gradient")" x1="1" y1="0" x2="0" y2="1">
+					<stop offset="0%" stop-color="@TrackRingGradient.Value.FirstColor" />
+					<stop offset="100%" stop-color="@TrackRingGradient.Value.SecondColor" />
+				</linearGradient>
+			}
+		</defs>
 
-	<circle class="progress-ring" cx="25" cy="25" r="15.91549430918954"
-			stroke="@_ringStroke" stroke-dasharray="@_dashesValue @_dashesSpace"></circle>
+		<circle class="track-ring" cx="20" cy="20" r="15.91549430918954"
+				stroke="@_trackStroke"></circle>
 
-</svg>
+		<circle class="progress-ring" cx="20" cy="20" r="15.91549430918954"
+				stroke="@_ringStroke" stroke-dasharray="@_dashesValue @_dashesSpace"></circle>
+
+	</svg>
+</div>
