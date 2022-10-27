@@ -7,10 +7,10 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
-
+<button @onclick="Increase">+</button>
 <div class="d-flex justify-content-center mt-10">
 	<div style="width:500px;height:500px;position:relative">
-		<Ring Width="400px" Height="400px" Value="83" RingGradient='new GradientColor("#FA5454", "#B50000")'
+		<Ring Width="400px" Height="400px" Value="_counter" RingGradient='new GradientColor("#FA5454", "#B50000")'
 			  style="position:absolute;top:50px;left:50px;"/>
 		<Ring Width="280px" Height="280px" Value="25" RingGradient='new GradientColor("#08B500", "#00F64E")'
 			  style="position:absolute;top:110px;left:110px;" />
@@ -19,3 +19,13 @@ Welcome to your new app.
 	</div>
 	
 </div>
+
+@code
+{
+	private int _counter = 50;
+
+	private void Increase()
+	{
+		_counter++;
+	}
+}
