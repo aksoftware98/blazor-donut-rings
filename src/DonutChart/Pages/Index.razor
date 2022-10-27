@@ -11,26 +11,20 @@ Welcome to your new app.
 
 <div class="row">
 	<div class="col-3" style="height:150px">
-		<div class="d-flex justify-content-center mt-10">
-			<div style="width:150px;height:150px;position:relative">
-				<Ring Width="150px" Height="150px" Value="_counter" RingGradient='new GradientColor("#FA5454", "#B50000")'
-					  style="position:absolute;top:50%;left:50%;" />
-				<Ring Width="90px" Height="90px" Value="25" RingGradient='new GradientColor("#08B500", "#00F64E")'
-					  style="position:absolute;top:50%;left:50%;" />
-				<Ring Width="50px" Height="50px" Value="100" RingGradient='new GradientColor("#54BBFA", "#0078C2")'
-					  style="position:absolute;top:50%;left:50%;" />
-			</div>
-		</div>
-
+		<ThreeRings FirstMaxValue="100" SecondMaxValue="5" ThirdMaxValue="70"
+					FirstValue="30" SecondValue="2" ThirdValue="50"
+					OutsideRingGradient='new GradientColor("#FA5454", "#B50000")'
+					CenterRingGradient='new GradientColor("#08B500", "#00F64E")'
+					SmallRingGradient='new GradientColor("#54BBFA", "#0078C2")' />
 	</div>
-	<div class="col-3">
-	</div>
-	<div class="col-3">
-	</div>
-	<div class="col-3">
-	</div>
-	<div class="col-3">
-	</div>
+</div>
+<div class="col-3">
+</div>
+<div class="col-3">
+</div>
+<div class="col-3">
+</div>
+<div class="col-3">
 </div>
 
 <div class="d-flex justify-content-center mt-10">
