@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace AKSoftware.ProductivePlus.Client.Services
 {
-    internal class DependencyInjectionExtensions
+    public static class DependencyInjectionExtensions
     {
+
+        
+
     }
 }

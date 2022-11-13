@@ -12,4 +12,8 @@
     <PackageReference Include="Microsoft.Authentication.WebAssembly.Msal" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AKSoftware.Components.Blazor.DonutRings\AKSoftware.Components.Blazor.DonutRings.csproj" />
+  </ItemGroup>
+
 </Project>
