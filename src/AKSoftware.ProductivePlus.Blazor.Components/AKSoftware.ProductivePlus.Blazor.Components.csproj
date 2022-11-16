@@ -15,4 +15,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AKSoftware.Components.Blazor.DonutRings\AKSoftware.Components.Blazor.DonutRings.csproj" />
+    <ProjectReference Include="..\AKSoftware.ProductivePlus.Shared\AKSoftware.ProductivePlus.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>

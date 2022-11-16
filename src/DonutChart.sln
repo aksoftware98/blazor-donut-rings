@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSoftware.ProductivePlus.B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSoftware.ProductivePlus.Blazor", "AKSoftware.ProductivePlus.Blazor\AKSoftware.ProductivePlus.Blazor.csproj", "{EA82943A-32AF-4829-B0A5-0E580DEA773B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSoftware.ProductivePlus.Shared", "AKSoftware.ProductivePlus.Shared\AKSoftware.ProductivePlus.Shared.csproj", "{CABAA7E5-3947-4910-8C66-5F9330C14D78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSoftware.ProductivePlus.Shared", "AKSoftware.ProductivePlus.Shared\AKSoftware.ProductivePlus.Shared.csproj", "{CABAA7E5-3947-4910-8C66-5F9330C14D78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKSoftware.ProductivePlus.Client.Services", "AKSoftware.ProductivePlus.Client.Services\AKSoftware.ProductivePlus.Client.Services.csproj", "{46DEDA20-343B-42E2-B914-4CDF90661B56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKSoftware.ProductivePlus.Client.Services", "AKSoftware.ProductivePlus.Client.Services\AKSoftware.ProductivePlus.Client.Services.csproj", "{46DEDA20-343B-42E2-B914-4CDF90661B56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

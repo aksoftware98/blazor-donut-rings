@@ -5,6 +5,19 @@
     /// </summary>
     public struct ProductivityCycle
     {
+
+        public ProductivityCycle()
+        {
+            WorkingTime = 0;
+            TargetWorkingTime = 360;
+
+            LearningTime = 0;
+            TargetLearningTime = 90;
+
+			MeditationSessionsCount = 0;
+            TargetMeditationSessionsCount = 5;
+        }
+
         /// <summary>
         /// Working time measured in minutes 
         /// </summary>
