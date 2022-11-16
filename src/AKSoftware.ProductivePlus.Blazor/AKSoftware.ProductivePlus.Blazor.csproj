@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AKSoftware.Components.Blazor.DonutRings\AKSoftware.Components.Blazor.DonutRings.csproj" />
+    <ProjectReference Include="..\AKSoftware.ProductivePlus.Blazor.Components\AKSoftware.ProductivePlus.Blazor.Components.csproj" />
   </ItemGroup>
 
 </Project>
