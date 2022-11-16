@@ -514,3 +514,93 @@
 .fw-700 {
     font-weight: 700;
 }
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.border-rounded-1 {
+    border-radius: 0.25rem;
+}
+
+.border-rounded-2 {
+    border-radius: 0.5rem;
+}
+
+.border-rounded-3 {
+    border-radius: 0.75rem;
+}
+
+.border-rounded-4 {
+    border-radius: 1rem;
+}
+
+.border-rounded-5 {
+    border-radius: 1.25rem;
+}
+
+.border-rounded-6 {
+    border-radius: 1.5rem;
+}
+
+.border-rounded-7 {
+    border-radius: 1.75rem;
+}
+
+.border-rounded-8 {
+    border-radius: 2rem;
+}
+
+.border-rounded-9 {
+    border-radius: 2.25rem;
+}
+
+.border-rounded-10 {
+    border-radius: 2.5rem;
+}
+
+.border-rounded-20 {
+    border-radius: 5rem; 
+}
+
+.border-rounded-30 {
+    border-radius: 7.5rem;
+}
+
+.blue-gradient {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+}
+
+.font-xxl {
+    font-size: 3.5rem;
+}
+
+.font-xl {
+    font-size: 3rem; 
+}
+
+.font-l {
+    font-size: 2.5rem; 
+}
+
+.font-m {
+    font-size: 2rem; 
+}
+
+.font-s {
+    font-size: 1rem;
+}
+
+.main-text {
+    color: white;
+}
+
+.secondary-text {
+    /* Light gray font color */
+    color: #e2e2e2;
+}
+
+.third-level-text {
+    /* Lighter gray font color */
+    color: #f2f2f2;
+}
