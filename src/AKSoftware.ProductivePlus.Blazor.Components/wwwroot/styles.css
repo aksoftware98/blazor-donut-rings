@@ -368,6 +368,26 @@
     padding: 1.75rem;
 }
 
+.p-8 {
+    padding: 2rem;
+}
+
+.p-9 {
+    padding: 2.25rem;
+}
+
+.p-10 {
+    padding: 2.5rem;
+}
+
+.p-11 {
+    padding: 2.75rem;
+}
+
+.p-12 {
+    padding: 3rem;
+}
+
 .pt-0 {
     padding-top: 0;
 }
@@ -481,6 +501,26 @@
 
 .justify-space-between {
     justify-content: space-between; 
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: start; 
+}
+
+.align-end {
+    align-items: end;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-shrink {
+    flex-shrink: 0;
 }
 
 .text-center {
@@ -607,4 +647,24 @@
 .third-level-text {
     /* Lighter gray font color */
     color: #f2f2f2;
+}
+
+.dark-blue-gradient {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.working-text-color {
+    color: #FA5454;
+}
+
+.learning-text-color {
+    color: #08B500;
+}
+
+.meditation-text-color {
+    color: #54BBFA;
+}
+
+.sub-title-font {
+    font-size: 1.25rem;
 }
