@@ -1,20 +1,43 @@
-﻿<div class="border-rounded-2 bg-gray d-flex align-center activity-card">
-	<img src="icons/suitcase.png" /> 
-	
-	<div class="activity-info-section">
-		
+﻿<div class="border-rounded-2 bg-gray d-flex align-center activity-card p-2 mt-2">
+	<img src="icons/suitcase.png" />
+
+	<div class="d-flex flex-column flex-grow ml-1">
+		<h3 class="fw-500 working-text-color m-0 @_titleClasses">@GetActivityTitle()</h3>
+		<p class="mb-0 fw-200 font-s mt-1 @_descriptionClasses">@GetActivityDescription()</p>
 	</div>
-	
-	<div class="activity-time-section">
-		
+
+	<div class="flex-shrink px-2">
+		<h4 class="m-0 fw-600">@GetActivityTime()</h4>
 	</div>
-</div> 
+</div>
 
 @code {
 
 	[Parameter]
 	public Activity? Activity { get; set; }
 
+	private string GetActivityTitle()
+	{
+		// TODO: Get the title by the activity type
+		return "Work on ProductivePlus";
+	}
 
-	
+	private string? GetActivityDescription()
+	{
+		return Activity?.ShortDescription;
+	}
+
+	private string GetActivityTime()
+	{
+		return "3h 43m";
+	}
+
+	private string _titleClasses => new CssBuilder()
+										.AddClass("working-text-color", Activity?.ActivityType == ActivityType.WorkingTime)
+										.AddClass("learning-text-color", Activity?.ActivityType == ActivityType.LearningTime)
+										.AddClass("meditation-text-color", Activity?.ActivityType == ActivityType.MeditationSessionsCount)
+										.Build();
+
+	private string _descriptionClasses => "";
+
 }

@@ -49,6 +49,11 @@ namespace AKSoftware.ProductivePlus.Shared
         /// </summary>
         public MeditationActivityType? MeditationActivityType { get; set; }
 
+        /// <summary>
+        /// Short description that describes the activity and what have been acheived through it 
+        /// </summary>
+        public string? ShortDescription { get; set; }
+
     }
 
 }

@@ -37,7 +37,7 @@
 	<div style="width:75px;height:75px;" class="text-center">
 		<p class="m-0 fw-600 my-1">Sun</p>
 		<PPRings />
-	</div>	
+	</div>
 </div>
 
 <!-- Main session -->
@@ -57,7 +57,19 @@
 	<h2 class="m-0">Activities</h2>
 
 	<div class="d-flex flex-column">
-		<PPActivityItem />
+		<PPActivityItem Activity="_sampleActivity" />
+		<PPActivityItem Activity="_sampleActivity" />
+		<PPActivityItem Activity="_sampleActivity" />
 	</div>
-	
+
 </section>
+
+@code
+{
+
+	private Activity _sampleActivity = new Activity
+	{
+		ShortDescription = "Working on implementing the Azure Functions to get the work to be best in its class"
+	};
+
+}

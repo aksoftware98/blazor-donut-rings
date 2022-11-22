@@ -668,3 +668,7 @@
 .sub-title-font {
     font-size: 1.25rem;
 }
+
+.bg-gray {
+    background-color: #ecf1f6;
+}
