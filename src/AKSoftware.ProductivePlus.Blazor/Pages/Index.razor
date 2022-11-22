@@ -56,10 +56,21 @@
 <section class="my-4">
 	<h2 class="m-0">Activities</h2>
 
-	<div class="d-flex flex-column">
-		<PPActivityItem Activity="_sampleActivity" />
-		<PPActivityItem Activity="_sampleActivity" />
-		<PPActivityItem Activity="_sampleActivity" />
+	<div class="row">
+		<div class="col-lg-6 col-md-12 col-xsm-12 mr-2">
+			<PPActivityItem Activity="_sampleActivity" />
+			<PPActivityItem Activity="_sampleActivity" />
+			<PPActivityItem Activity="_sampleActivity" />
+			<PPActivityItem Activity="_sampleActivity" />
+			<PPActivityItem Activity="_sampleActivity" />
+		</div>
+
+		<div class="col-lg-6 col-md-12 col-xsm-12">
+			<PPActivityItem Activity="_sampleActivity" />
+			<PPActivityItem Activity="_sampleActivity" />
+			<PPActivityItem Activity="_sampleActivity" />
+			<PPActivityItem Activity="_sampleActivity" />
+		</div>
 	</div>
 
 </section>
@@ -68,8 +79,8 @@
 {
 
 	private Activity _sampleActivity = new Activity
-	{
-		ShortDescription = "Working on implementing the Azure Functions to get the work to be best in its class"
-	};
+		{
+			ShortDescription = "Working on implementing the Azure Functions to get the work to be best in its class"
+		};
 
 }
