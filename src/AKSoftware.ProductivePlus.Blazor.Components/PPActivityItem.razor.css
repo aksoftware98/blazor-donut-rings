@@ -2,3 +2,8 @@ img {
     width: 40px; 
 }
 
+.short-description {
+    width: 120px;
+    overflow:hidden; 
+    word-spacing: nowrap; 
+}
