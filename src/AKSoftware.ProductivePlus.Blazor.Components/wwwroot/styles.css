@@ -1005,5 +1005,23 @@
     }
 }
 
+.cursor-pointer {
+    cursor: pointer; 
+}
 
+.link {
+    text-decoration: none;
+    color: #00AEFF;
+    cursor: pointer; 
+    transition: 0.2s; 
+}
+
+    .link:hover {
+        text-decoration: none;
+        color: #29BBFF;
+    }
+
+    .link:active {
+        color: #007BB5;
+    }
 
