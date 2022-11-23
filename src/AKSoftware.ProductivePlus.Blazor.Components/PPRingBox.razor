@@ -1,5 +1,5 @@
 ﻿
-<div style="width:@Width;height:@Height" class="text-center border-rounded-1 @_containerClasses p-1" @onclick="OnClickAsync">
+<div style="@_containerStyles" class="text-center border-rounded-3 @_containerClasses p-2 mx-2" @onclick="OnClickAsync">
 	<p class="m-0 fw-600 my-1">@ShortTitle</p>
 	<div style="width:@Width;height:@Width">
 		<PPRings Cycle="Cycle" />
@@ -31,7 +31,14 @@
 	private string _containerClasses => new CssBuilder()
 												.AddClass("dark-blue-gradient", IsSelected)
 												.AddClass("cursor-pointer", IsSelectable)
-												.AddClass("color-white", IsSelected)
+												.AddClass("light-text", IsSelected)
+												.Build();
+
+	private string _containerStyles => new StyleBuilder()
+												.AddStyle("width", Width)
+												.AddStyle("height", Height)
+												.AddStyle("min-width", Width)
+												.AddStyle("min-height", Height)
 												.Build();
 
 	private async Task OnClickAsync()

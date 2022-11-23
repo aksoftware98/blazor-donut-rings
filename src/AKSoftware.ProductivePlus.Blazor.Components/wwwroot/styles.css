@@ -1025,3 +1025,10 @@
         color: #007BB5;
     }
 
+.light-text {
+    color: white; 
+}
+
+.dark-text {
+    color: black;
+}
