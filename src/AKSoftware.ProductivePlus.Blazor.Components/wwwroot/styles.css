@@ -1032,3 +1032,17 @@
 .dark-text {
     color: black;
 }
+
+.horizontal-overflow-auto {
+    overflow-x: auto;     
+}
+
+.vertical-overflow-auto {
+    overflow-y: auto; 
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+
