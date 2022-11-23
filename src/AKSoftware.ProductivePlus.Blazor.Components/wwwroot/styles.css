@@ -1056,3 +1056,16 @@
 .width-100 {
     width: 100%;
 }
+
+.blur {
+    filter: blur(10px);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.fluent-acrylic {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
