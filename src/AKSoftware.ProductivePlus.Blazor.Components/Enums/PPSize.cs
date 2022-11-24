@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AKSoftware.ProductivePlus.Blazor.Components.Enums
+namespace AKSoftware.ProductivePlus.Blazor.Components
 {
-	public enum PPSize
+	public enum CUISize
 	{
 		Small,
 		Medium,
